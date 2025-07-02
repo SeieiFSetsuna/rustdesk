@@ -1,51 +1,51 @@
 use hbb_common::regex::Regex;
 use std::ops::Deref;
 
-mod ar;
-mod be;
-mod bg;
-mod ca;
+// mod ar;
+// mod be;
+// mod bg;
+// mod ca;
 mod cn;
-mod cs;
-mod da;
-mod de;
-mod el;
-mod en;
-mod eo;
-mod es;
-mod et;
-mod eu;
-mod fa;
-mod fr;
-mod he;
-mod hr;
-mod hu;
-mod id;
-mod it;
-mod ja;
-mod ko;
-mod kz;
-mod lt;
-mod lv;
-mod nb;
-mod nl;
-mod pl;
-mod ptbr;
-mod ro;
-mod ru;
-mod sc;
-mod sk;
-mod sl;
-mod sq;
-mod sr;
-mod sv;
-mod th;
-mod tr;
-mod tw;
-mod uk;
-mod vi;
-mod ta;
-mod ge;
+// mod cs;
+// mod da;
+// mod de;
+// mod el;
+// mod en;
+// mod eo;
+// mod es;
+// mod et;
+// mod eu;
+// mod fa;
+// mod fr;
+// mod he;
+// mod hr;
+// mod hu;
+// mod id;
+// mod it;
+// mod ja;
+// mod ko;
+// mod kz;
+// mod lt;
+// mod lv;
+// mod nb;
+// mod nl;
+// mod pl;
+// mod ptbr;
+// mod ro;
+// mod ru;
+// mod sc;
+// mod sk;
+// mod sl;
+// mod sq;
+// mod sr;
+// mod sv;
+// mod th;
+// mod tr;
+// mod tw;
+// mod uk;
+// mod vi;
+// mod ta;
+// mod ge;
 
 pub const LANGS: &[(&str, &str)] = &[
     // ("en", "English"),
@@ -125,52 +125,53 @@ pub fn translate_locale(name: String, locale: &str) -> String {
     }
     let lang = lang.to_lowercase();
     let m = match lang.as_str() {
-        "fr" => fr::T.deref(),
+        // "fr" => fr::T.deref(),
         "zh-cn" => cn::T.deref(),
-        "it" => it::T.deref(),
-        "zh-tw" => tw::T.deref(),
-        "de" => de::T.deref(),
-        "nb" => nb::T.deref(),
-        "nl" => nl::T.deref(),
-        "es" => es::T.deref(),
-        "et" => et::T.deref(),
-        "eu" => eu::T.deref(),
-        "hu" => hu::T.deref(),
-        "ru" => ru::T.deref(),
-        "eo" => eo::T.deref(),
-        "id" => id::T.deref(),
-        "br" => ptbr::T.deref(),
-        "pt" => ptbr::T.deref(),
-        "tr" => tr::T.deref(),
-        "cs" => cs::T.deref(),
-        "da" => da::T.deref(),
-        "sk" => sk::T.deref(),
-        "vi" => vi::T.deref(),
-        "pl" => pl::T.deref(),
-        "ja" => ja::T.deref(),
-        "ko" => ko::T.deref(),
-        "kz" => kz::T.deref(),
-        "uk" => uk::T.deref(),
-        "fa" => fa::T.deref(),
-        "ca" => ca::T.deref(),
-        "el" => el::T.deref(),
-        "sv" => sv::T.deref(),
-        "sq" => sq::T.deref(),
-        "sr" => sr::T.deref(),
-        "th" => th::T.deref(),
-        "sl" => sl::T.deref(),
-        "ro" => ro::T.deref(),
-        "lt" => lt::T.deref(),
-        "lv" => lv::T.deref(),
-        "ar" => ar::T.deref(),
-        "bg" => bg::T.deref(),
-        "be" => be::T.deref(),
-        "he" => he::T.deref(),
-        "hr" => hr::T.deref(),
-        "sc" => sc::T.deref(),
-        "ta" => ta::T.deref(),
-        "ge" => ge::T.deref(),
-        _ => en::T.deref(),
+        // "it" => it::T.deref(),
+        // "zh-tw" => tw::T.deref(),
+        // "de" => de::T.deref(),
+        // "nb" => nb::T.deref(),
+        // "nl" => nl::T.deref(),
+        // "es" => es::T.deref(),
+        // "et" => et::T.deref(),
+        // "eu" => eu::T.deref(),
+        // "hu" => hu::T.deref(),
+        // "ru" => ru::T.deref(),
+        // "eo" => eo::T.deref(),
+        // "id" => id::T.deref(),
+        // "br" => ptbr::T.deref(),
+        // "pt" => ptbr::T.deref(),
+        // "tr" => tr::T.deref(),
+        // "cs" => cs::T.deref(),
+        // "da" => da::T.deref(),
+        // "sk" => sk::T.deref(),
+        // "vi" => vi::T.deref(),
+        // "pl" => pl::T.deref(),
+        // "ja" => ja::T.deref(),
+        // "ko" => ko::T.deref(),
+        // "kz" => kz::T.deref(),
+        // "uk" => uk::T.deref(),
+        // "fa" => fa::T.deref(),
+        // "ca" => ca::T.deref(),
+        // "el" => el::T.deref(),
+        // "sv" => sv::T.deref(),
+        // "sq" => sq::T.deref(),
+        // "sr" => sr::T.deref(),
+        // "th" => th::T.deref(),
+        // "sl" => sl::T.deref(),
+        // "ro" => ro::T.deref(),
+        // "lt" => lt::T.deref(),
+        // "lv" => lv::T.deref(),
+        // "ar" => ar::T.deref(),
+        // "bg" => bg::T.deref(),
+        // "be" => be::T.deref(),
+        // "he" => he::T.deref(),
+        // "hr" => hr::T.deref(),
+        // "sc" => sc::T.deref(),
+        // "ta" => ta::T.deref(),
+        // "ge" => ge::T.deref(),
+        // _ => en::T.deref(),
+        _ => cn::T.deref(),
     };
     let (name, placeholder_value) = extract_placeholder(&name);
     let replace = |s: &&str| {
