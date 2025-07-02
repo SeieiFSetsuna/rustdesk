@@ -191,10 +191,10 @@ members = ["libs/scrap", "libs/hbb_common", "libs/enigo", "libs/clipboard", "lib
 exclude = ["vdi/host", "examples/custom_plugin"]
 
 [package.metadata.winres]
-LegalCopyright = "Copyright © 2025 Purslane Ltd. All rights reserved."
-ProductName = "RustDesk"
-FileDescription = "RustDesk Remote Desktop"
-OriginalFilename = "rustdesk.exe"
+LegalCopyright = "Copyright © 2025 TR-Veda Ltd. All rights reserved."
+ProductName = "TianRen"
+FileDescription = "TianRen Remote Desktop"
+OriginalFilename = "TianRen.exe"
 
 [target.'cfg(target_os="windows")'.build-dependencies]
 winres = "0.1"
