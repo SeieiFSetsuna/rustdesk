@@ -145,7 +145,7 @@ pub static ref T: std::collections::HashMap<&'static str, &'static str> =
         ("Failed to make direct connection to remote desktop", "無法直接連線到遠端桌面"),
         ("Set Password", "設定密碼"),
         ("OS Password", "作業系統密碼"),
-        ("install_tip", "UAC 會導致 RustDesk 在某些情況下無法正常作為遠端端點運作。若要避開 UAC，請點選下方按鈕將 RustDesk 安裝到系統中。"),
+        ("install_tip", "如果想獲得更好的遠程服務體驗，建議安裝到系統服務。"),
         ("Click to upgrade", "點選以升級"),
         ("Click to download", "點選以下載"),
         ("Click to update", "點選以更新"),
