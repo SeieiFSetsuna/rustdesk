@@ -172,7 +172,7 @@ pub static ref T: std::collections::HashMap<&'static str, &'static str> =
         ("Local Port", "本地端口"),
         ("Local Address", "当前地址"),
         ("Change Local Port", "修改本地端口"),
-        ("setup_server_tip", "如果想获得更好的远程服务体验，建议安装到系统服务。"),
+        ("setup_server_tip", " 如果想获得更好的远程服务体验，建议安装到系统服务。"),
         ("Too short, at least 6 characters.", "太短了，至少 6 个字符"),
         ("The confirmation is not identical.", "两次输入不匹配"),
         ("Permissions", "权限"),
