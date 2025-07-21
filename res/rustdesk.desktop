@@ -2,18 +2,18 @@
 Name=TianRen
 GenericName=Remote Desktop
 Comment=Remote Desktop
-Exec=tianren %u
-Icon=tianren
+Exec=rustdesk %u
+Icon=rustdesk
 Terminal=false
 Type=Application
 StartupNotify=true
 Categories=Network;RemoteAccess;GTK;
 Keywords=internet;
 Actions=new-window;
-StartupWMClass=tianren
+StartupWMClass=rustdesk
 
 X-Desktop-File-Install-Version=0.23
 
 [Desktop Action new-window]
 Name=Open a New Window
-Exec=tianren %u
+Exec=rustdesk %u
