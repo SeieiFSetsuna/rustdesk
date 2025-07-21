@@ -92,7 +92,7 @@ BEGIN
             VALUE "CompanyName", "TR-Veda Ltd" "\0"
             VALUE "FileDescription", "TianRen Remote Desktop" "\0"
             VALUE "FileVersion", VERSION_AS_STRING "\0"
-            VALUE "InternalName", "rustdesk" "\0"
+            VALUE "InternalName", "tianren" "\0"
             VALUE "LegalCopyright", "Copyright © 2025 TR-Veda Ltd. All rights reserved." "\0"
             VALUE "OriginalFilename", "tianren.exe" "\0"
             VALUE "ProductName", "TianRen" "\0"
