@@ -2,7 +2,7 @@
 name = "rustdesk-portable-packer"
 version = "1.4.0"
 edition = "2021"
-description = "TianRen Remote Desktop"
+description = "RustDesk Remote Desktop"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
@@ -19,9 +19,9 @@ native-windows-gui = {version = "1.0", default-features = false, features = ["an
 
 [package.metadata.winres]
 LegalCopyright = "Copyright © 2025 TR-Veda Ltd. All rights reserved."
-ProductName = "TianRen"
+ProductName = "RustDesk"
 OriginalFilename = "rustdesk.exe"
-FileDescription = "TianRen Remote Desktop"
+FileDescription = "RustDesk Remote Desktop"
 #ProductVersion = ""
 
 [target.'cfg(target_os="windows")'.build-dependencies]
