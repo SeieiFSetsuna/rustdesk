@@ -173,7 +173,7 @@ mod windows {
 
     // Used for privacy mode(magnifier impl).
     pub const RUNTIME_BROKER_EXE: &'static str = "C:\\Windows\\System32\\RuntimeBroker.exe";
-    pub const WIN_TOPMOST_INJECTED_PROCESS_EXE: &'static str = "RuntimeBroker_tianren.exe";
+    pub const WIN_TOPMOST_INJECTED_PROCESS_EXE: &'static str = "RuntimeBroker_rustdesk.exe";
 
     pub(super) fn copy_runtime_broker(dir: &Path) {
         let src = RUNTIME_BROKER_EXE;
@@ -189,7 +189,7 @@ mod windows {
             }
         }
         let _allow_err = Command::new("taskkill")
-            .args(&["/F", "/IM", "RuntimeBroker_tianren.exe"])
+            .args(&["/F", "/IM", "RuntimeBroker_rustdesk.exe"])
             .creation_flags(winapi::um::winbase::CREATE_NO_WINDOW)
             .output();
         let _allow_err = std::fs::copy(src, &format!("{}\\{}", dir.to_string_lossy(), tgt));
