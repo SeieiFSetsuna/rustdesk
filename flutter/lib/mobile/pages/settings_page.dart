@@ -35,7 +35,7 @@ class SettingsPage extends StatefulWidget implements PageShape {
   State<SettingsPage> createState() => _SettingsState();
 }
 
-const url = 'https://tianren.com/';
+const url = 'https://rustdesk.com/';
 
 enum KeepScreenOn {
   never,
