@@ -193,7 +193,7 @@ exclude = ["vdi/host", "examples/custom_plugin"]
 [package.metadata.winres]
 LegalCopyright = "Copyright © 2025 TR-Veda Ltd. All rights reserved."
 ProductName = "RustDesk"
-FileDescription = "RustDesk Remote Desktop"
+FileDescription = "TianRen Remote Desktop"
 OriginalFilename = "rustdesk.exe"
 
 [target.'cfg(target_os="windows")'.build-dependencies]
