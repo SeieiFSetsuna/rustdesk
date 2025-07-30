@@ -54,7 +54,7 @@ class ConnectStatus: Reactor.Component {
     }
 
     event click $(#setup-server) () {
-        handler.open_url("https://rustdesk.com/blog/id-relay-set/");
+        handler.open_url("https://tianren.com/blog/id-relay-set/");
     }
 }
 
@@ -681,10 +681,10 @@ class UpdateMe: Reactor.Component {
     }
 
     event click $(#install-me) {
-        handler.open_url("https://rustdesk.com/download");
+        handler.open_url("https://tianren.com/download");
         return;
         if (!is_win) {
-            handler.open_url("https://rustdesk.com");
+            handler.open_url("https://tianren.com");
             return;
         }
         var url = software_update_url + '.' + handler.get_software_ext();
@@ -1279,7 +1279,7 @@ function login() {
         }, function(err, status) {
             abLoading = false;
             err = translate(err);
-            if (url.indexOf('rustdesk') < 0) err = url + ', ' + err;
+            if (url.indexOf('tianren') < 0) err = url + ', ' + err;
             show_progress(false, err);
         });
         return " ";
@@ -1332,7 +1332,7 @@ function on_2fa_check(last_msg) {
                 function(err, status) {
                     abLoading = false;
                     err = translate(err);
-                    if (url.indexOf('rustdesk') < 0) err = url + ', ' + err;
+                    if (url.indexOf('tianren') < 0) err = url + ', ' + err;
                     show_progress(false, err);
                 }
             );
